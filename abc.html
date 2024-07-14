@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Data Validation</title>
+</head>
+<body>
+<h2>Form Data Validation</h2>
+<%
+// Retrieve form data
+String name = request.getParameter("name"); String email = request.getParameter("email"); String errorMessage = "";
+// Check if form is submitted
+if (request.getMethod().equalsIgnoreCase("post")) {
+// Validate form data
+if (name == null || name.trim().isEmpty()) { errorMessage += "Name is required.<br>";
+}
+if (email == null || email.trim().isEmpty()) { errorMessage += "Email is required.<br>";
+} else if (!email.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}")) { errorMessage += "Invalid email format.<br>";
+}
+// If there are validation errors, display them if (!errorMessage.isEmpty()) {
+out.println("<div style='color: red'>" + errorMessage + "</div>");
+} else {
+
+out.println("<div style='color: green'>Form data validated successfully!</div>");
+// You can process the validated data here, such as storing it in a database
+} }
+%>
+<form method="post">
+Name: <input type="text" name="name"><br> Email: <input type="text" name="email"><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
