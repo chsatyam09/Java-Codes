@@ -19,7 +19,20 @@
 //     }
 // }
 
+// ==========================================================================================
+// not an example of encapsulation 
 
+// public class encapsulation {
+//     public int  display(){
+//         int age =  22 ;
+//         return age ;
+//     }
+//     public static void main(String[] args) {
+//         Test tl = new Test();
+//         int x = tl.display();
+//         System.out.println(x);
+//     }
+// }
 
 // ==========================================================================================
 // Another  not an example of encapsulation 
@@ -242,3 +255,52 @@
 //     }
 // }
 
+// Real-World Example: Bank Account
+// Consider a real-world example of a Bank Account. In this example, encapsulation is used to protect sensitive data like the account 
+// balance and account holder's information, ensuring that these details can only be accessed and modified through well-defined methods.
+
+// public class Test {
+
+//     private String BankAccountHolder_name ;
+//     private double Account_balance  ;
+//     private int Account_NUmber ;
+
+//     public void setBankAccountHolder_name(String BankAccountHolder_name){
+//         this.BankAccountHolder_name = BankAccountHolder_name ;
+//     }
+//     public void setAccount_balance(double Account_balance){
+//         this.Account_balance = Account_balance;
+//     }
+//     public void setAccount_Number(int Account_NUmber){
+//         this.Account_NUmber = Account_NUmber ;
+//     }
+
+
+// public String getBankAccountHolder_name(){
+//     return BankAccountHolder_name;
+// }
+
+// public double getAccount_balance(){
+//     return Account_balance;
+// }
+
+// public int getAccount_NUmber(){
+//     return Account_NUmber;
+// }
+
+
+//     public static void main(String[] args) {
+
+//         Test tl = new Test() ;
+//         tl.setBankAccountHolder_name("Satyam raj");
+//         tl.setAccount_balance(12345.79);
+//         tl.setAccount_Number(1234);
+        
+
+//         System.out.println(tl.getBankAccountHolder_name());
+//         System.out.println(tl.getAccount_NUmber());
+//         System.out.println(tl.getAccount_balance());
+
+
+//     }
+// }

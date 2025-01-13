@@ -32,7 +32,7 @@
 //         Animal animal3 = new Cat();
 
 //         // Calling makeSound method of each object
-//         animal1.makeSound(); // Output: Some sound
+//         animal1.makeSound(); // Output: Some sound  // method will be callled on the basis of object created 
 //         animal2.makeSound(); // Output: Woof
 //         animal3.makeSound(); // Output: Meow
 //     }
@@ -81,36 +81,38 @@
 
 //     {
 
-//         // CargoPlane1 cp=new CargoPlane1();
-//         // PassengerPlane1 pp=new PassengerPlane1();
-//         // AeroPlane1  dp = new AeroPlane1();
-
-
-//         // cp.takeOff();
-//         // cp.fly();
-//         // pp.takeOff();
-//         // pp.fly();
-//         // dp.takeOff() ;
-//         // dp.fly(); 
-
-
-// // or 
-
-
-
-//         CargoPlane1 cp=new CargoPlane1();
-
-//         // cp.takeOff();
-//         // cp.fly();
-        
+//         CargoPlane1 cp=new CargoPlane1();  // object Created 
 //         PassengerPlane1 pp=new PassengerPlane1();
-//         // pp.takeOff();
-//         // pp.fly();
+//         AeroPlane1  dp = new AeroPlane1();
 
 
-//         // AeroPlane1  dp = new AeroPlane1();
-//         // dp.takeOff() ;
-//         // dp.fly(); 
+//         cp.takeOff();   // method will be callled on the basis of object created 
+//         cp.fly();
+
+//         pp.takeOff(); // method will be callled on the basis of object created 
+//         pp.fly();
+
+//         dp.takeOff() ; // method will be callled on the basis of object created 
+//         dp.fly(); 
+
+
+// // // or 
+
+
+
+//         // CargoPlane1 cp=new CargoPlane1();
+
+//         // // cp.takeOff();
+//         // // cp.fly();
+        
+//         // PassengerPlane1 pp=new PassengerPlane1();
+//         // // pp.takeOff();
+//         // // pp.fly();
+
+
+//         // // AeroPlane1  dp = new AeroPlane1();
+//         // // dp.takeOff() ;
+//         // // dp.fly(); 
 
 
        
@@ -222,37 +224,37 @@
 // Java Program for Method overloading
 // By using Different Types of Arguments 
  
-// // Class 1
-// class Helper {
+// Class 1
+class Helper {
  
-//     // Method 1 with 2 integer parameters
-//     static int Multiply(int a, int b)
-//     {
-//         // Returns product of integer numbers
-//         return a * b;
-//     }
+    // Method 1 with 2 integer parameters
+    static int Multiply(int a, int b)
+    {
+        // Returns product of integer numbers
+        return a * b;
+    }
  
-//     // Method 2
-//     // With same name but with 2 double parameters
-//     static double Multiply(double a, double b)
-//     {
-//         // Returns product of double numbers
-//         return a * b;
-//     }
-// }
+    // Method 2
+    // With same name but with 2 double parameters
+    static double Multiply(double a, double b)
+    {
+        // Returns product of double numbers
+        return a * b;
+    }
+}
  
-// // Class 2
-// // Main class
-// class polymorphism {
-//     // Main driver method
-//     public static void main(String[] args)
-//     {
-//         // Calling method by passing
-//         // input as in arguments
-//         System.out.println(Helper.Multiply(2, 4));
-//         System.out.println(Helper.Multiply(5.5, 6.3));
-//     }
-// }
+// Class 2
+// Main class
+class polymorphism {
+    // Main driver method
+    public static void main(String[] args)
+    {
+        // Calling method by passing
+        // input as in arguments
+        System.out.println(Helper.Multiply(2, 4));
+        System.out.println(Helper.Multiply(5.5, 6.3));
+    }
+}
 
 // ============================================================================================================
 

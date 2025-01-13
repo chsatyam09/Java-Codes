@@ -40,7 +40,7 @@ class student{
 }
 
 
-public class toString {  // A toString() is an in-built method in Java that returns the value given to it in string format
+public class ToString {  // A toString() is an in-built method in Java that returns the value given to it in string format
     public static void main(String[] args) {
 
         student s1 = new student(44, "satyam");
