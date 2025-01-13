@@ -1,75 +1,24 @@
-// Static variables
+public class variables {
 
-// public class Example {
-//     // Static variable
-//     public static int staticVariable = 10;
+    static int id = 101; // Static Variable
+    String name = "Satyam"; // Instance Variable
 
-//     public static void main(String[] args) {
-//         // Accessing static variable without creating an object
-//         System.out.println(Example.staticVariable);
-
-//         // You can also access it using an object, but it's not necessary
-//         Example obj = new Example();
-//         System.out.println(obj.staticVariable); // This is not conventional for static variables
-//     }
-// }
-
-// local variable
-
-// public class Example {
-//     public void myMethod() {
-//         int x = 10; // This is a local variable
-
-//         // You can use x within this method
-//         System.out.println(x);
-//     }
-
-//     public static void main(String[] args) {
-//         // Uncommenting the following line would result in a compilation error
-//         // System.out.println(x); // Error: cannot find symbol 'x'
-
-//         Example obj = new Example();
-//         obj.myMethod(); // This will print the value of x within the myMethod
-//     }
-// }
-
-// instance variable
-
-
-
-
-
-public class VariableExample {
-    // Static variable
-    static int staticVar = 5;
-
-    // Instance variables
-    String instanceVar = "Instance Variable";
-    int instanceNumber;
-
-    // Constructor with parameters to initialize instance variables
-    public VariableExample(int number) {
-        this.instanceNumber = number;
-    }
-
-    // Method with a local variable
-    public void exampleMethod() {
-        // Local variable
-        int localVar = 10;
-
-        System.out.println("Static Variable: " + staticVar);
-        System.out.println("Instance Variable: " + instanceVar);
-        System.out.println("Instance Number: " + instanceNumber);
-        System.out.println("Local Variable: " + localVar);
+    void method() {
+        String surname = "Jaat"; // Local Variable
+        System.out.println("Surname: " + surname); // Print local variable
     }
 
     public static void main(String[] args) {
-        // Creating an instance of VariableExample
-        VariableExample myObject = new VariableExample(20);
+        int age = 18; // Local Variable
+        System.out.println("Age: " + age); // Print local variable
 
-        // Accessing instance method that uses all three types of variables
-        myObject.exampleMethod();
+        // Access static variable directly
+        System.out.println("ID: " + variables.id);
+
+        // Create an instance of Variables to access instance variables and methods
+        variables obj = new variables();
+        System.out.println("Name: " + obj.name); // Access instance variable
+        obj.method(); // Call non-static method
     }
 }
-
 

@@ -1,6 +1,7 @@
 
 // Encapsulation
-// The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
+// Encapsulation is the process wrapping the data(Variable) and the code (Mehod) that is opearte on that data in a single unit, 
+// it also restrict the some of the object's components, to maintain the Intergrity of data
 
 // declare class variables/attributes as private
 // provide public get and set methods to access and update the value of a private variable

@@ -12,7 +12,7 @@
 // Static Blocks in Java
 
 // 1. Static keyword 
-// he static keyword in Java is used to create members (variables or methods) that belong to the class rather than instances of the class.
+// The static keyword in Java is used to create members (variables or methods) that belong to the class rather than instances of the class.
 // it does not need object to execute 
 
 // The static keyword in Java is used for memory management mainly.
@@ -21,12 +21,74 @@
 // It makes your program memory efficient (i.e., it saves memory).
 
 
+// Static variable 
 
-// Static vs. Public
+
+
+// public class Rough {
+
+//     int empid ;
+//     String name ;
+//     String company;
+
+//     Rough(int empid , String name , String company){
+//         this.empid=empid ;
+//         this.name=name;
+//         this.company =company;
+//     }
+
+//     void display(){
+//         System.out.println(empid + name+company);
+//     }
+
+//     public static void main(String[] args) {
+//      Rough r  = new Rough(101,"Satyam", "Google");
+//      r.display();
+//      Rough r1  = new Rough(101,"Satyam", "Google");
+//      r1.display();
+//      Rough r2  = new Rough(101,"Satyam", "Google");
+//      r2.display();
+//     }
+    
+// }
+
+
+
+
+// public class Rough {
+
+//     int empid ;
+//     String name ;
+//     static String company = "Google";
+
+//     Rough(int empid , String name ){
+//         this.empid=empid ;
+//         this.name=name;
+//     }
+
+//     void display(){
+//         System.out.println(empid + name+company);
+//     }
+
+//     public static void main(String[] args) {
+//      Rough r  = new Rough(101,"Satyam");
+//      r.display();
+//      Rough r1  = new Rough(101,"Satyam");
+//      r1.display();
+//      Rough r2  = new Rough(101,"Satyam");
+//      r2.display();
+//     }
+    
+// }
+
+
+
+
+// Static vs. Public method 
 //  we created a static method, which means that it can be accessed without creating an object of the class,
 //  unlike public, which can only be accessed by objects:
 
-// public class Main {
+// public class staticg {
 
 //   // Static method
 //   static void myStaticMethod() {
@@ -45,11 +107,35 @@
 
 
 //     //public
-//     Main myObj = new Main(); // Create an object of Main
+//     staticg myObj = new staticg(); // Create an object of Main
 //     myObj.myPublicMethod(); // Call the public method on the object
 
 //   }
 // }
+
+
+
+// public class Rough {
+
+//     public void Demo(){
+//         System.out.println("This is Demo Method ");
+//     }
+
+//     static void Power(){
+//         System.out.println("This is Sttic  Method ");
+//     }
+
+//     public static void main(String[] args) {
+//         Rough.Power();
+
+//         Rough r = new Rough();
+//         r.Demo();
+//     }
+// }
+
+
+
+
 // ======================================================================================================================
 
 
@@ -142,30 +228,10 @@
 // It is useful for initializing static variables or performing any one-time setup for the class.
 
 
-// class Example {
-//     static {
-//         // Code in the static block
-//         System.out.println("Static block executed");
-//     }
-// }
 
 
 
-//  class staticg {
-//     {
-//         System.out.println("Namaste"); // isko object cchaiye for execution 
-//     }
-
-//     static{
-//         System.out.println("hello ji "); // no need of object for execution
-//     }
-//     public static void main(String args[]){
-
-//         staticg r= new staticg(); // class ka object 
-  
-//     }
-    
-// }
+ 
 
 // ============================================================================================================================================
 

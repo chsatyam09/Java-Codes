@@ -30,10 +30,12 @@
 //  refrence variable ka bann skta hai . Dog() yaha pe object variable hai and animal refrence varivble
 // }
 // }
+
 // ==========================================================================================================================================================
 
 // example -3
 // example Abstract class
+
 
 // abstract class Animal {   // Abstract class
 
@@ -59,7 +61,7 @@
 // }
 // }
 
-// ==========================================================================================================================================================
+
 // ==========================================================================================================================================================
 
 // Another example-5
@@ -78,10 +80,7 @@
 // // then that regular class must have to implement all the abstract method of parent abstract class .
 
 // public void eat(){ // ye likhna compulsory hai
-// System.out.println(" Dog is eating slowly");
-
-// }
-
+// System.out.println(" Dog is eating slowly");}
 // }
 
 // class Tiger extends animal{ // If a regular class extends an abstract class
@@ -94,7 +93,6 @@
 // }
 
 // class Abstractss {
-
 // public static void main(String[] args) {
 // Dog r = new Dog() ;
 // r.eat();
@@ -102,49 +100,47 @@
 // Tiger p = new Tiger() ;
 // p.eat();
 // }
-
 // }
 
 // ==========================================================================================================================================================
 
 // best example - 6
 
-abstract class animal {
+// abstract class animal {
 
-public abstract void eat(); // isme kuch define hii nhi isse call karne ki jarurat hii nhi hai tooh object kyu hii bananae ki jarurat hai
-}
+// public abstract void eat();  // isme kuch define hii nhi isse call karne ki jarurat hii nhi hai tooh object kyu hii bananae ki jarurat hai
+// }
 
-class Dog extends animal { // If a regular class extends an abstract class then that regular class must have to implement all the abstract method of parent abstract class .
-public void eat(){ // ye likhna compulsory hai
-System.out.println(" Dog is eating slowly");
+// class Dog extends animal { // If a regular class extends an abstract class then that regular class must have to implement all the abstract method of parent abstract class .
+// public void eat(){ // ye likhna compulsory hai
+// System.out.println(" Dog is eating slowly");
 
-}
+// }
 
-}
+// }
 
-class Tiger extends animal { // If a regular class extends an abstract class
-// then that regular class must have to implement all the abstract method of parent abstract class .
-public void eat(){ // ye likhna compulsory hai
-System.out.println(" tiger is eating fast");
-}
+// class Tiger extends animal { // If a regular class extends an abstract class
+// // then that regular class must have to implement all the abstract method of parent abstract class .
+// public void eat(){ // ye likhna compulsory hai
+// System.out.println(" tiger is eating fast");
+// }
 
-}
+// }
 
-class Abstractss {
+// class Abstractss {
 
-public static void main(String[] args) {
-Dog r = new Dog() ;
-// animal r = new Dog() ; we can use this also ( super class ke pass itna
-// capability hota hai ki wo apne sub class ke object ko hold kar ske )
-r.eat();
+// public static void main(String[] args) {
+// Dog r = new Dog() ;
+// // animal r = new Dog() ; we can use this also ( super class ke pass itna
+// // capability hota hai ki wo apne sub class ke object ko hold kar ske )
+// r.eat();
 
-Tiger p = new Tiger() ;
-// animal r = new Tiger() ; we can use this also ( super class ke pass itna
-// capability hota hai ki wo apne sub class ke object ko hold kar ske )
-p.eat();
-}
-
-}
+// Tiger p = new Tiger() ;
+// // animal r = new Tiger() ; we can use this also ( super class ke pass itna
+// // capability hota hai ki wo apne sub class ke object ko hold kar ske )
+// p.eat();
+// }
+// }
 
 // ==========================================================================================================================================================
 

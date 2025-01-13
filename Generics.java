@@ -2,7 +2,7 @@
 
 // Generics in java was introduced in java  version 5 ;
 // Generics Specifies the class or method for differnt types  ;
-//GENERICS ARE MAINLY USED FOR COLLECTIONS ;
+// GENERICS ARE MAINLY USED FOR COLLECTIONS ;
 //  It makes the code stable by detecting the bugs at compile time.
 
 // Before generics, we can store any type of objects in the collection, i.e., non-generic. 
@@ -80,29 +80,29 @@
 
 // Generic class
 
-import java.util.*;
+// import java.util.*;
 
-class BankAccount<T> { // Corrected class name to adhere to Java naming conventions // this is genric
-                       // class T is the type which you have to specify in main class
-    T t1;
+// class BankAccount<T> { // Corrected class name to adhere to Java naming conventions // this is genric
+//                        // class T is the type which you have to specify in main class
+//     T t1;
 
-    BankAccount(T obj) { // Constructor with parameter
-        this.t1 = obj;
-    }
+//     BankAccount(T obj) { // Constructor with parameter
+//         this.t1 = obj;
+//     }
 
-    public void display() { // Method to display the value of the generic type
-        System.out.println(t1);
-    }
-}
+//     public void display() { // Method to display the value of the generic type
+//         System.out.println(t1);
+//     }
+// }
 
-public class Generics {
-    public static void main(String[] args) {
-        BankAccount<String> b1 = new BankAccount<>("hello");
-        BankAccount<Integer> b2 = new BankAccount<>(3);
-        b1.display();
-        b2.display();
-    }
-}
+// public class Generics {
+//     public static void main(String[] args) {
+//         BankAccount<String> b1 = new BankAccount<>("hello");
+//         BankAccount<Integer> b2 = new BankAccount<>(3);
+//         b1.display();
+//         b2.display();
+//     }
+// }
 
 // =================================================================================================================================================
 

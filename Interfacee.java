@@ -48,35 +48,35 @@
 
 // interface ka orginal or best examole 
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
-// interface client{
-//     void input(); // public + abstract  interface method must be override by sub-class.
-//     void output(); // public + abstract  interface method must be override by sub-class.
+interface client{
+    void input(); // public + abstract  interface method must be override by sub-class.
+    void output(); // public + abstract  interface method must be override by sub-class.
 
-// }
-// class Interfacee implements client{  // Interfacee class name as file name 
-//     String name ;
-//     double Salary ;
-//     public void input(){   // compulsory ,interface method must be override by sub-class.
-//         Scanner  r = new Scanner(System.in);
-//         System.out.println("enter user name ");
-//         name = r.nextLine();
+}
+class Interfacee implements client{  // Interfacee class name as file name 
+    String name ;
+    double Salary ;
+    public void input(){   // compulsory ,interface method must be override by sub-class.
+        Scanner  r = new Scanner(System.in);
+        System.out.println("enter user name ");
+        name = r.nextLine();
 
-//         System.out.println("enter Salary ");
-//         Salary = r.nextDouble();
-//     }
+        System.out.println("enter Salary ");
+        Salary = r.nextDouble();
+    }
 
-//     public void output(){  // // compulsory , interface method must be override by sub-class.
-//         System.out.println(name + " " + Salary);
-//     }
-//     public static void main(String[] args) {
-//         client  c = new Interfacee();
-//         c.input();
-//         c.output();
-//     }
+    public void output(){  // // compulsory , interface method must be override by sub-class.
+        System.out.println(name + " " + Salary);
+    }
+    public static void main(String[] args) {
+        client  c = new Interfacee();
+        c.input();
+        c.output();
+    }
 
-// }
+}
 
 // ======================================================================================================================================================================================
 // multiple inheritance using interface
